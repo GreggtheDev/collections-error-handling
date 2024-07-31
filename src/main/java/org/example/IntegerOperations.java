@@ -29,3 +29,14 @@ public class IntegerOperations {
         System.out.println("List of integers without duplicates: " + integerSet);
         System.out.println("Sum of integers: " + sum);
         System.out.println("Average of integers: " + average);
+
+        // Handle exceptions using try-catch-finally and multi-catch blocks
+        try {
+            System.out.println("Accessing an element at index 100: " + integerList.get(100));
+        } catch (IndexOutOfBoundsException | IllegalArgumentException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        } finally {
+            System.out.println("Execution completed in the finally block.");
+        }
+    }
+}
