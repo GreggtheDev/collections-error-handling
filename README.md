@@ -69,7 +69,7 @@ The main class, `IntegerOperations`, performs the following steps:
 
 1. Clone the repository:
     ```sh
-    git clone <repository_url>
+    git clone (https://github.com/GreggtheDev/collections-error-handling.git)
     ```
 
 2. Navigate to the project directory:
