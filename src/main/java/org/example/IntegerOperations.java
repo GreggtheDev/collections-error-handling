@@ -24,3 +24,8 @@ public class IntegerOperations {
         } catch (ArithmeticException e) {
             System.out.println("Error calculating average: " + e.getMessage());
         }
+
+        // Print the sum, average, and the list of integers without duplicates
+        System.out.println("List of integers without duplicates: " + integerSet);
+        System.out.println("Sum of integers: " + sum);
+        System.out.println("Average of integers: " + average);
