@@ -9,3 +9,18 @@ public class IntegerOperations {
 
         // Use a Set to remove duplicates
         Set<Integer> integerSet = new HashSet<>(integerList);
+
+        // Calculate the sum and average of the integers
+        int sum = 0;
+        double average = 0.0;
+        try {
+            for (int num : integerSet) {
+                sum += num;
+            }
+            if (integerSet.size() == 0) {
+                throw new ArithmeticException("Division by zero");
+            }
+            average = (double) sum / integerSet.size();
+        } catch (ArithmeticException e) {
+            System.out.println("Error calculating average: " + e.getMessage());
+        }
